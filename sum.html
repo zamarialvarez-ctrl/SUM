@@ -1,0 +1,80 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Sum Two Numbers</title>
+</head>
+<body>
+	<h2>Add Two Numbers</h2>
+	<input type="number" id="num1" placeholder="Enter first number">
+	<input type="number" id="num2" placeholder="Enter second number">
+	<button onclick="calculateSum()">Calculate Sum</button>
+	<p>Result: <span id="result"></span></p>
+	
+	<h2>Multiply Two Numbers</h2>
+	<input type="number" id="Pnum1" placeholder="Enter first number">
+	<input type="number" id="Pnum2" placeholder="Enter second number">
+	<button onclick="calculateProduct()">Calculate Product</button>
+	<p>Result: <span id="Presult"></span></p>
+	
+	<h2>Divide Two Numbers</h2>
+	<input type="number" id="qnum1" placeholder="Enter first number">
+	<input type="number" id="qnum2" placeholder="Enter second number">
+	<button onclick="calculateQuotient()">Calculate Quotient</button>
+	<p>Result: <span id="qresult"></span></p>
+	
+	<h2>Subtract Two Numbers</h2>
+	<input type="number" id="dnum1" placeholder="Enter first number">
+	<input type="number" id="dnum2" placeholder="Enter second number">
+	<button onclick="calculateDifference()">Calculate Difference</button>
+	<p>Result: <span id="dresult"></span></p>
+	
+	<script>
+		function calculateSum() {
+			// Get the values from the input fields 
+			let num1 = parseFloat(document.getElementById('num1').value);
+			let num2 = parseFloat(document.getElementById('num2').value);
+			
+			// Calculate the Sum
+			let sum= num1 + num2; 
+			
+			// Display the result 
+			document.getElementById('result').textContent = sum;
+			}
+			function calculateProduct() {
+			// Get the values from the input fields 
+			let Pnum1 = parseFloat(document.getElementById('Pnum1').value);
+			let Pnum2 = parseFloat(document.getElementById('Pnum2').value);
+			
+			// Calculate the Prodcut
+			let product= Pnum1 * Pnum2; 
+			
+			// Display the result 
+			document.getElementById('Presult').textContent = product;
+			}
+			function calculateQuotient() {
+			// Get the values from the input fields 
+			let qnum1 = parseFloat(document.getElementById('qnum1').value);
+			let qnum2 = parseFloat(document.getElementById('qnum2').value);
+			
+			// Calculate the Quotient
+			let quotient= qnum1 / qnum2; 
+			
+			// Display the result 
+			document.getElementById('qresult').textContent = quotient;
+			}
+			function calculateDifference() {
+			// Get the values from the input fields 
+			let dnum1 = parseFloat(document.getElementById('dnum1').value);
+			let dnum2 = parseFloat(document.getElementById('dnum2').value);
+			
+			// Calculate the Difference
+			let difference= dnum1 - dnum2; 
+			
+			// Display the result 
+			document.getElementById('dresult').textContent = difference;
+			}
+			
+		
+	</script>
+<body>
+</html>
